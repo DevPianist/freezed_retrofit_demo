@@ -1,0 +1,30 @@
+name: freezed_retrofit_demo
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  freezed_annotation: ^0.14.1
+  retrofit: ^2.0.0-beta1
+  dio: ^4.0.0-prev3
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^1.12.2
+  freezed: ^0.14.1+1
+  json_serializable: ^4.1.0
+  pedantic: ^1.11.0
+  retrofit_generator: ^2.0.0-beta2
+  
+flutter:
+  uses-material-design: true
