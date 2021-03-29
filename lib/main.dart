@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'src/ui/pages/users/users.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(FreezedRetrofitApp());
 }
 
-class MyApp extends StatelessWidget {
+class FreezedRetrofitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
