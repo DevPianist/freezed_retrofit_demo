@@ -11,22 +11,22 @@ class UserPage extends StatelessWidget {
 
   final int id;
   final String name;
-  final _bloc = UserBloc();
+  final _userBloc = UserBloc();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(name)),
       body: FutureBuilder<void>(
-          future: _bloc.getUser(id),
+          future: _userBloc.getUser(id),
           builder: (context, _) {
             return StreamBuilder<UserState>(
-              stream: _bloc.userState,
+              stream: _userBloc.stream,
               builder: (context, snapshot) {
                 final state = snapshot.data;
                 switch (state) {
                   case UserState.success:
-                    final user = _bloc.user;
+                    final user = _userBloc.user;
                     return ListView(
                       children: [
                         ListTile(
